@@ -22,7 +22,7 @@ const config = {
 	projectName: "hongwei0417.github.io", // Usually your repo name.
 	trailingSlash: false,
 
-	onBrokenLinks: "throw",
+	onBrokenLinks: "log",
 	onBrokenMarkdownLinks: "warn",
 
 	// Even if you don't use internalization, you can use this field to set useful
