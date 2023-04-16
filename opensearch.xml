@@ -4,7 +4,7 @@
   <ShortName>想養鴨子的工程師</ShortName>
   <Description>Search 想養鴨子的工程師</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://hongwei0417.github.io/img/favicon.ico</Image>
+  <Image width="16" height="16" type="image/x-icon">https://hongwei0417.github.io/img/dock.gif</Image>
   <Url type="text/html" method="get" template="https://hongwei0417.github.io/search?q={searchTerms}"/>
   <Url type="application/opensearchdescription+xml" rel="self" template="https://hongwei0417.github.io/opensearch.xml" />
   <moz:SearchForm>https://hongwei0417.github.io/</moz:SearchForm>
