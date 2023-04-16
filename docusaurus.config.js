@@ -41,6 +41,8 @@ const config = {
 				docs: {
 					routeBasePath: "/",
 					sidebarPath: require.resolve("./sidebars.js"),
+					showLastUpdateAuthor: true,
+					showLastUpdateTime: true,
 					// Please change this to your repo.
 					// Remove this to remove the "edit this page" links.
 					editUrl:
@@ -82,63 +84,121 @@ const config = {
 					},
 					{ to: "/blog", label: "部落格", position: "left" },
 					{
-						href: "https://github.com/facebook/docusaurus",
+						href: "https://github.com/hongwei0417",
 						label: "GitHub",
 						position: "right",
 					},
 				],
-				hideOnScroll: true,
+				// hideOnScroll: true,
 			},
 			footer: {
 				style: "dark",
 				links: [
 					{
-						title: "Docs",
+						title: "Website",
 						items: [
 							{
-								label: "Tutorial",
-								to: "/intro",
+								label: "筆記",
+								to: "/",
+							},
+							{
+								label: "部落格",
+								to: "/blog",
+							},
+							{
+								label: "分類",
+								to: "/tags",
 							},
 						],
 					},
-					{
-						title: "Community",
-						items: [
-							{
-								label: "Stack Overflow",
-								href: "https://stackoverflow.com/questions/tagged/docusaurus",
-							},
-							{
-								label: "Discord",
-								href: "https://discordapp.com/invite/docusaurus",
-							},
-							{
-								label: "Twitter",
-								href: "https://twitter.com/docusaurus",
-							},
-						],
-					},
+					// {
+					// 	title: "Community",
+					// 	items: [
+					// 		{
+					// 			label: "Stack Overflow",
+					// 			href: "https://stackoverflow.com/questions/tagged/docusaurus",
+					// 		},
+					// 		{
+					// 			label: "Discord",
+					// 			href: "https://discordapp.com/invite/docusaurus",
+					// 		},
+					// 		{
+					// 			label: "Twitter",
+					// 			href: "https://twitter.com/docusaurus",
+					// 		},
+					// 	],
+					// },
 					{
 						title: "More",
 						items: [
 							{
-								label: "Blog",
-								to: "/blog",
+								label: "GitHub",
+								href: "https://github.com/hongwei0417",
 							},
 							{
-								label: "GitHub",
-								href: "https://github.com/facebook/docusaurus",
+								label: "LinkedIn",
+								href: "https://www.linkedin.com/in/hongwei0417/",
+							},
+							{
+								label: "Facebook",
+								href: "https://www.facebook.com/hongwei0417/",
 							},
 						],
 					},
 				],
-				copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+				copyright: `Copyright © ${new Date().getFullYear()} 想養鴨子的工程師`,
 			},
 			prism: {
 				theme: lightCodeTheme,
 				darkTheme: darkCodeTheme,
 			},
+			algolia: {
+				// The application ID provided by Algolia
+				appId: "YOUR_APP_ID",
+
+				// Public API key: it is safe to commit it
+				apiKey: "YOUR_SEARCH_API_KEY",
+
+				indexName: "YOUR_INDEX_NAME",
+
+				// Optional: see doc section below
+				contextualSearch: true,
+
+				// Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+				externalUrlRegex: "external\\.com|domain\\.com",
+
+				// Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
+				replaceSearchResultPathname: {
+					from: "/docs/", // or as RegExp: /\/docs\//
+					to: "/",
+				},
+
+				// Optional: Algolia search parameters
+				searchParameters: {},
+
+				// Optional: path for search page that enabled by default (`false` to disable it)
+				searchPagePath: "search",
+
+				//... other Algolia params
+			},
 		}),
+	themes: [
+		// ... Your other themes.
+		// [
+		// 	require.resolve("@easyops-cn/docusaurus-search-local"),
+		// 	/** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+		// 	({
+		// 		// ... Your options.
+		// 		// `hashed` is recommended as long-term-cache of index file is possible.
+		// 		hashed: true,
+		// 		docsRouteBasePath: "/",
+		// 		// For Docs using Chinese, The `language` is recommended to set to:
+		// 		// ```
+		// 		// language: ["en", "zh"],
+		// 		// ```
+		// 	}),
+		// ],
+	],
 };
 
 module.exports = config;
