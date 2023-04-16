@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
 	title: "想養鴨子的工程師",
 	tagline: "不是在重構，就是在重構的路上",
-	favicon: "img/favicon.ico",
+	favicon: "img/dock.gif",
 
 	// Set the production url of your site here
 	url: "https://hongwei0417.github.io",
@@ -72,8 +72,8 @@ const config = {
 			navbar: {
 				title: "想養鴨子的工程師",
 				logo: {
-					alt: "My Site Logo",
-					src: "img/logo.svg",
+					alt: "想養鴨子的工程師",
+					src: "img/dock.gif",
 				},
 				items: [
 					{
