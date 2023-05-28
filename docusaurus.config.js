@@ -82,7 +82,7 @@ const config = {
 						position: "left",
 						label: "筆記",
 					},
-					{ to: "/blog", label: "部落格", position: "left" },
+					// { to: "/blog", label: "部落格", position: "left" },
 					{
 						href: "https://github.com/hongwei0417",
 						label: "GitHub",
@@ -101,10 +101,10 @@ const config = {
 								label: "筆記",
 								to: "/",
 							},
-							{
-								label: "部落格",
-								to: "/blog",
-							},
+							// {
+							// 	label: "部落格",
+							// 	to: "/blog",
+							// },
 							{
 								label: "分類",
 								to: "/tags",
