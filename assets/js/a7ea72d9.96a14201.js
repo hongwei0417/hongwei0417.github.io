@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocusaurus_website=self.webpackChunkdocusaurus_website||[]).push([[830],{4126:e=>{e.exports=JSON.parse('{"title":"Angular","slug":"/category/angular","permalink":"/category/angular","navigation":{"previous":{"title":"Introduction","permalink":"/"},"next":{"title":"Directive Dynamic Operations","permalink":"/angular/directive-use-case"}}}')}}]);
