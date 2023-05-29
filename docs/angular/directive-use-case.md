@@ -1,6 +1,6 @@
 ---
 # sidebar_position: 2
-tags: ["frontend", "angular"]
+tags: ["frontend", "angular", "directive"]
 last_update:
   date: 2023/5/28
   author: Kevin Hu
@@ -17,7 +17,7 @@ Directive 可以寄生在宿主元件(Host Element)上，藉此來改變該元�
 
 ## Common APIs
 
-在介紹情境之前，來先了解一些 Angular 常用的 API，透過直接在 Directive 內注入這些服務就可以直接引用
+在介紹情境之前，來先了解一些 Angular 常用的 API:
 
 - [ViewContainerRef](https://angular.io/api/core/ViewContainerRef): 負責管理動態元件的特殊容器，它提供了創建、插入、刪除元件等操作
 - [ElementRef](https://angular.io/api/core/ElementRef): 用於直接代表元件的物件，可透過它提供的`nativeElement`存取元件的 DOM，可以想像它就是將包元件 DOM 在包一層的物件
