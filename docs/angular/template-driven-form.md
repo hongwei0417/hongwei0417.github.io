@@ -1,10 +1,10 @@
 ---
 # sidebar_position: 2
+draft: true
 tags: ["frontend", "angular", "angular-form"]
 last_update:
   date: 2023/6/19
   author: Kevin Hu
-  draft: true
 ---
 
 # Template Driven Form
@@ -38,3 +38,4 @@ last_update:
 - https://www.youtube.com/watch?v=G8zXugcYd7o&list=PLX7eV3JL9sfmJ6AaZj9eDlAKrJrEul4Vz
 - https://medium.com/@a.yurich.zuev/angular-nested-template-driven-form-4a3de2042475
 - https://github.com/angular/angular/blob/4.4.x/packages/forms/src/directives/ng_model_group.ts
+- https://www.tektutorialshub.com/angular/host-decorator-in-angular/
